@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.cart_content {
+  /* background-color: aqua; */
+  display: flex;
+  margin-top: 20px;
+  /* width: 400px; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cart_content h4 {
+  margin-top: 20px;
+  font-weight: 100;
+}
+
+.cart_items {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(255, 244, 230);
+  box-shadow: 3px 5px 12px 5px rgba(32, 31, 25, 0.2);
+}

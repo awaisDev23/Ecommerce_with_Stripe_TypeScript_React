@@ -1,0 +1,108 @@
+.card_row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+  background-color: rgb(242, 231, 215);
+}
+
+.card_margin {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.card {
+  width: calc(33.33% - 20px);
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin: 15px;
+  max-width: 400px;
+  max-height: 500px;
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.card_content > * {
+  margin-bottom: 8px;
+}
+
+.product_modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-behavior: smooth;
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(255, 253, 184);
+  padding: 20px;
+  border-radius: 4px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.modal-content h2 {
+  margin-bottom: 10px;
+}
+
+.modal-content img {
+  object-fit: cover;
+}
+
+.modal-content Button {
+  margin-top: 10px;
+  background-color: chocolate;
+}
+
+.modal-content Button:hover {
+  margin-top: 10px;
+  background-color: rgb(70, 32, 4);
+}
+
+.selectedproduct_image {
+  /* max-width: 100%; */
+  max-width: 200px;
+  max-height: 200px;
+  margin-top: 10px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    width: calc(33.33% - 40px);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    width: calc(50% - 40px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: calc(100% - 40px);
+  }
+
+  .card_row {
+    flex-direction: column;
+  }
+}
